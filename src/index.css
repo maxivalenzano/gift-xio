@@ -1,0 +1,6 @@
+@font-face {
+    font-family: "Filxgirl";
+    src: local("Filxgirl"),
+     url("./fonts/filxGirl/Filxgirl.TTF") format("truetype");
+    font-weight: bold;
+    }
