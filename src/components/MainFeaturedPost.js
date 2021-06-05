@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { createMuiTheme, ThemeProvider  } from '@material-ui/core/styles';
+import imag from '../assets/photo.jpg'
 
 // const raleway = {
 //   fontFamily: 'Filxgirl',
@@ -35,8 +36,7 @@ const theme = createMuiTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',],
       subtitle1: {
-        fontSize: 28,
-        fontStyle: '"Helvetica Neue"',
+        fontSize: 30,
       },
       h5: {
         fontSize: 48,
@@ -81,7 +81,7 @@ export default function MainFeaturedPost(props) {
   return (
     <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${post.image})` }}>
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {<img style={{ display: 'none' }} src={imag} alt={post.imageText} />}
       <div className={classes.overlay} />
       <Grid container justify="flex-end" alignItems="flex-start">
         <Grid item>

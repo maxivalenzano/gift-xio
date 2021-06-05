@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { ThemeProvider } from '@material-ui/core/styles';
 
 // const raleway = {
 //   fontFamily: 'Filxgirl',
@@ -52,13 +50,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Header(props) {
+export default function Header() {
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-          <ThemeProvider>
+
 
         <Typography
           component="h2"
@@ -70,12 +68,8 @@ export default function Header(props) {
           >
           Xioanara💕 Maximiliano
         </Typography>
-            </ThemeProvider>
+
       </Toolbar>
     </React.Fragment>
   );
 }
-
-Header.propTypes = {
-  title: PropTypes.string,
-};

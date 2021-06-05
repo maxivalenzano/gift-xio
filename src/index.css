@@ -1,4 +1,11 @@
 @font-face {
+    font-family: "caveat";
+    src: local("caveat"),
+     url("./fonts/caveat/Caveat.ttf") format("truetype");
+    }
+
+
+@font-face {
     font-family: "Filxgirl";
     src: local("Filxgirl"),
      url("./fonts/filxGirl/Filxgirl.TTF") format("truetype");
